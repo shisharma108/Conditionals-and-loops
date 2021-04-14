@@ -1,0 +1,9 @@
+N = int(input()) 
+required_sum = 0  
+   # use while loop to iterate un till zero  
+while(2<=N):
+    if N%2==0:
+        required_sum+=N
+    N-=1
+     
+print(required_sum)
