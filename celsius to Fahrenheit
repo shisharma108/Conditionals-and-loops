@@ -1,0 +1,7 @@
+c = int(input())
+
+f = float(9/5)
+
+x = f*c +32
+
+print("%0.1f"%(float(x)))
