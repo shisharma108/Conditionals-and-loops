@@ -1,0 +1,12 @@
+n = int(input())
+count = 1
+i = 1
+while count <= n:
+    m = (3*i + 2)
+    if m%4!=0:
+        print(m,end=" ")
+        count=count+1
+    
+    	
+    i=i+1
+    
