@@ -1,0 +1,25 @@
+def numberPattern(n):
+
+    # Initializing matrix to store the pattern
+    ans = [[-1 for j in range(pow(2, i))] for i in range(n)]
+
+    # Using as a starting value for the pattern
+    k = 1
+
+    # For loop to create the pattern
+    for i in range(n):
+        for j in range(pow(2, i)):
+
+            # If value becomes larger than 10 rhen we again start from 1
+            if (k < 10):
+                ans[i][j] = k
+                k += 1
+
+            else:
+                # reset value of k
+                k = 1
+                ans[i][j] = k
+                k += 1
+    
+    # Return the matrix
+    return ans
