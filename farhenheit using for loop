@@ -1,0 +1,8 @@
+a=int(input())
+b=int(input())
+c=int(input())
+fog=0
+for i in range(a,b+1,c):
+    fog=(5*(i-32))/9
+    fog=int(fog)
+    print(i, " ",fog)
